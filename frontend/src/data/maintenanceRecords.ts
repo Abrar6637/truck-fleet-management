@@ -1,0 +1,140 @@
+import { MaintenanceRecord } from "@/types/maintenance";
+
+export const maintenanceRecords: MaintenanceRecord[] = [
+  {
+    id: 1,
+    truckId: 1,
+    maintenanceType: "oil_change",
+    status: "completed",
+    serviceDate: "2026-09-15",
+    odometerKm: 180500,
+    workshopName: "Hino Lahore Service Center",
+    description:
+      "Engine oil, oil filter and general inspection completed.",
+    labourCost: 5000,
+    partsCost: 18500,
+    otherCost: 1500,
+    nextServiceDate: "2026-12-15",
+    nextServiceOdometerKm: 190500,
+    receiptNumber: "HINO-1001",
+    notes: "Next oil change recommended after 10,000 km.",
+    createdBy: "Fleet Admin",
+    createdAt: "2026-09-15T16:30:00",
+  },
+
+  {
+    id: 2,
+    truckId: 2,
+    maintenanceType: "brakes",
+    status: "completed",
+    serviceDate: "2026-09-20",
+    odometerKm: 140800,
+    workshopName: "Isuzu Authorized Workshop",
+    description:
+      "Front brake pads replaced and braking system inspected.",
+    labourCost: 8000,
+    partsCost: 32000,
+    otherCost: 2000,
+    nextServiceOdometerKm: 160000,
+    receiptNumber: "ISUZU-2045",
+    createdBy: "Fleet Admin",
+    createdAt: "2026-09-20T14:20:00",
+  },
+
+  {
+    id: 3,
+    truckId: 3,
+    maintenanceType: "general_service",
+    status: "completed",
+    serviceDate: "2026-09-25",
+    odometerKm: 166200,
+    workshopName: "FAW Lahore Workshop",
+    description:
+      "Complete vehicle inspection, lubrication and filter service.",
+    labourCost: 10000,
+    partsCost: 22000,
+    otherCost: 3000,
+    nextServiceDate: "2026-12-25",
+    nextServiceOdometerKm: 176200,
+    receiptNumber: "FAW-3090",
+    createdBy: "Fleet Admin",
+    createdAt: "2026-09-25T17:00:00",
+  },
+
+  {
+    id: 4,
+    truckId: 4,
+    maintenanceType: "engine",
+    status: "in_progress",
+    serviceDate: "2026-10-03",
+    odometerKm: 121500,
+    workshopName: "Hino Lahore Service Center",
+    description:
+      "Engine inspection due to abnormal noise and power loss.",
+    labourCost: 15000,
+    partsCost: 45000,
+    otherCost: 5000,
+    receiptNumber: "HINO-4102",
+    notes:
+      "Truck will remain unavailable until workshop inspection is completed.",
+    createdBy: "Fleet Admin",
+    createdAt: "2026-10-03T10:00:00",
+  },
+
+  {
+    id: 5,
+    truckId: 6,
+    maintenanceType: "emergency_repair",
+    status: "in_progress",
+    serviceDate: "2026-09-20",
+    odometerKm: 196200,
+    workshopName: "Raza Diesel Workshop",
+    description:
+      "Emergency repair after breakdown during Rawalpindi trip.",
+    labourCost: 20000,
+    partsCost: 65000,
+    otherCost: 5000,
+    receiptNumber: "RDW-5501",
+    notes:
+      "Breakdown occurred during TRP-1005. Final repair cost may change.",
+    createdBy: "Fleet Admin",
+    createdAt: "2026-09-20T13:30:00",
+  },
+
+  {
+    id: 6,
+    truckId: 5,
+    maintenanceType: "oil_change",
+    status: "scheduled",
+    serviceDate: "2026-10-10",
+    odometerKm: 98750,
+    workshopName: "Fleet Service Workshop",
+    description:
+      "Scheduled engine oil and filter replacement.",
+    labourCost: 5000,
+    partsCost: 17000,
+    otherCost: 0,
+    nextServiceOdometerKm: 108750,
+    createdBy: "Fleet Admin",
+    createdAt: "2026-10-04T09:30:00",
+  },
+
+  {
+    id: 7,
+    truckId: 7,
+    maintenanceType: "electrical",
+    status: "cancelled",
+    serviceDate: "2026-09-18",
+    odometerKm: 110300,
+    workshopName: "Lahore Auto Electric",
+    description:
+      "Battery and alternator inspection was scheduled.",
+    labourCost: 0,
+    partsCost: 0,
+    otherCost: 0,
+    notes:
+      "Maintenance cancelled because truck was moved to inactive status.",
+    createdBy: "Fleet Admin",
+    createdAt: "2026-09-17T15:00:00",
+  },
+];

@@ -1,0 +1,32 @@
+# Next.js frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/dist/
+
+# Frontend environment files
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# Laravel backend
+backend/vendor/
+backend/.env
+backend/.env.*
+!backend/.env.example
+backend/storage/*.key
+backend/storage/logs/
+backend/bootstrap/cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

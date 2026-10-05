@@ -1,0 +1,193 @@
+import { TripStatusHistory } from "@/types/tripStatusHistory";
+
+export const tripStatusHistory: TripStatusHistory[] = [
+  // TRP-1001
+  {
+    id: 1,
+    tripId: 1,
+    newStatus: "created",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-03T08:00:00",
+    notes: "Trip created.",
+  },
+  {
+    id: 2,
+    tripId: 1,
+    oldStatus: "created",
+    newStatus: "assigned",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-03T08:15:00",
+    notes: "Truck and driver assigned.",
+  },
+  {
+    id: 3,
+    tripId: 1,
+    oldStatus: "assigned",
+    newStatus: "started",
+    changedBy: "Ahmed Khan",
+    changedAt: "2026-10-03T09:00:00",
+    notes: "Trip started from pickup location.",
+  },
+  {
+    id: 4,
+    tripId: 1,
+    oldStatus: "started",
+    newStatus: "in_transit",
+    changedBy: "Ahmed Khan",
+    changedAt: "2026-10-03T09:20:00",
+    notes: "Truck is now in transit.",
+  },
+
+  // TRP-1002
+  {
+    id: 5,
+    tripId: 2,
+    newStatus: "created",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-04T07:30:00",
+  },
+  {
+    id: 6,
+    tripId: 2,
+    oldStatus: "created",
+    newStatus: "assigned",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-04T07:45:00",
+  },
+  {
+    id: 7,
+    tripId: 2,
+    oldStatus: "assigned",
+    newStatus: "started",
+    changedBy: "Usman Ali",
+    changedAt: "2026-10-04T08:30:00",
+  },
+
+  // TRP-1003
+  {
+    id: 8,
+    tripId: 3,
+    newStatus: "created",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-04T06:30:00",
+  },
+  {
+    id: 9,
+    tripId: 3,
+    oldStatus: "created",
+    newStatus: "assigned",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-04T06:45:00",
+  },
+  {
+    id: 10,
+    tripId: 3,
+    oldStatus: "assigned",
+    newStatus: "started",
+    changedBy: "Bilal Ahmad",
+    changedAt: "2026-10-04T07:15:00",
+  },
+  {
+    id: 11,
+    tripId: 3,
+    oldStatus: "started",
+    newStatus: "in_transit",
+    changedBy: "Bilal Ahmad",
+    changedAt: "2026-10-04T07:30:00",
+  },
+
+  // TRP-1004 - Completed trip
+  {
+    id: 12,
+    tripId: 4,
+    newStatus: "created",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-09-27T08:00:00",
+  },
+  {
+    id: 13,
+    tripId: 4,
+    oldStatus: "created",
+    newStatus: "assigned",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-09-27T08:15:00",
+  },
+  {
+    id: 14,
+    tripId: 4,
+    oldStatus: "assigned",
+    newStatus: "started",
+    changedBy: "Hamza Iqbal",
+    changedAt: "2026-09-27T09:00:00",
+  },
+  {
+    id: 15,
+    tripId: 4,
+    oldStatus: "started",
+    newStatus: "in_transit",
+    changedBy: "Hamza Iqbal",
+    changedAt: "2026-09-27T09:20:00",
+  },
+  {
+    id: 16,
+    tripId: 4,
+    oldStatus: "in_transit",
+    newStatus: "delivered",
+    changedBy: "Hamza Iqbal",
+    changedAt: "2026-09-28T14:30:00",
+    notes: "Goods delivered successfully.",
+  },
+  {
+    id: 17,
+    tripId: 4,
+    oldStatus: "delivered",
+    newStatus: "completed",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-09-28T16:00:00",
+    notes: "Trip closed by fleet admin.",
+  },
+
+  // TRP-1005 - Cancelled
+  {
+    id: 18,
+    tripId: 5,
+    newStatus: "created",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-09-20T07:00:00",
+  },
+  {
+    id: 19,
+    tripId: 5,
+    oldStatus: "created",
+    newStatus: "assigned",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-09-20T07:15:00",
+  },
+  {
+    id: 20,
+    tripId: 5,
+    oldStatus: "assigned",
+    newStatus: "cancelled",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-09-20T08:00:00",
+    notes: "Trip cancelled because of truck breakdown.",
+  },
+
+  // TRP-1006 - Upcoming assigned trip
+  {
+    id: 21,
+    tripId: 6,
+    newStatus: "created",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-04T12:00:00",
+  },
+  {
+    id: 22,
+    tripId: 6,
+    oldStatus: "created",
+    newStatus: "assigned",
+    changedBy: "Fleet Admin",
+    changedAt: "2026-10-04T12:15:00",
+    notes: "Truck and driver assigned for upcoming trip.",
+  },
+];

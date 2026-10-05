@@ -1,0 +1,135 @@
+import { OdometerLog } from "@/types/odometerLog";
+
+export const odometerLogs: OdometerLog[] = [
+  // Truck 1 - LEC-4582
+  {
+    id: 1,
+    truckId: 1,
+    odometerKm: 184200,
+    source: "manual",
+    recordedAt: "2026-09-28T09:00:00",
+    notes: "Routine odometer reading.",
+    recordedBy: "Fleet Admin",
+    createdAt: "2026-09-28T09:00:00",
+  },
+  {
+    id: 2,
+    truckId: 1,
+    odometerKm: 184650,
+    source: "trip_start",
+    tripId: 1,
+    recordedAt: "2026-10-01T07:30:00",
+    notes: "Odometer recorded at trip start.",
+    recordedBy: "Ahmed Khan",
+    createdAt: "2026-10-01T07:30:00",
+  },
+  {
+    id: 3,
+    truckId: 1,
+    odometerKm: 185000,
+    source: "fuel",
+    fuelEntryId: 1,
+    recordedAt: "2026-10-02T14:15:00",
+    notes: "Reading captured with fuel entry.",
+    recordedBy: "Ahmed Khan",
+    createdAt: "2026-10-02T14:15:00",
+  },
+
+  // Truck 2 - LES-9214
+  {
+    id: 4,
+    truckId: 2,
+    odometerKm: 142800,
+    source: "manual",
+    recordedAt: "2026-09-29T10:00:00",
+    recordedBy: "Fleet Admin",
+    createdAt: "2026-09-29T10:00:00",
+  },
+  {
+    id: 5,
+    truckId: 2,
+    odometerKm: 143050,
+    source: "trip_start",
+    tripId: 2,
+    recordedAt: "2026-10-03T08:00:00",
+    recordedBy: "Usman Ali",
+    createdAt: "2026-10-03T08:00:00",
+  },
+  {
+    id: 6,
+    truckId: 2,
+    odometerKm: 143420,
+    source: "trip_end",
+    tripId: 2,
+    recordedAt: "2026-10-04T18:30:00",
+    recordedBy: "Usman Ali",
+    createdAt: "2026-10-04T18:30:00",
+  },
+
+  // Truck 3 - LHR-6731
+  {
+    id: 7,
+    truckId: 3,
+    odometerKm: 208500,
+    source: "manual",
+    recordedAt: "2026-09-30T11:00:00",
+    recordedBy: "Fleet Admin",
+    createdAt: "2026-09-30T11:00:00",
+  },
+  {
+    id: 8,
+    truckId: 3,
+    odometerKm: 208900,
+    source: "trip_start",
+    tripId: 3,
+    recordedAt: "2026-10-02T06:45:00",
+    recordedBy: "Bilal Ahmad",
+    createdAt: "2026-10-02T06:45:00",
+  },
+
+  // Truck 4 - LEA-3045
+  {
+    id: 9,
+    truckId: 4,
+    odometerKm: 167200,
+    source: "trip_end",
+    tripId: 4,
+    recordedAt: "2026-09-30T17:45:00",
+    recordedBy: "Hamza Iqbal",
+    createdAt: "2026-09-30T17:45:00",
+  },
+  {
+    id: 10,
+    truckId: 4,
+    odometerKm: 167250,
+    source: "maintenance",
+    maintenanceRecordId: 1,
+    recordedAt: "2026-10-04T10:00:00",
+    notes: "Reading captured during maintenance.",
+    recordedBy: "Fleet Admin",
+    createdAt: "2026-10-04T10:00:00",
+  },
+
+  // Truck 6 - LEF-1122
+  {
+    id: 11,
+    truckId: 6,
+    odometerKm: 196100,
+    source: "trip_start",
+    tripId: 5,
+    recordedAt: "2026-10-01T08:15:00",
+    recordedBy: "Ali Raza",
+    createdAt: "2026-10-01T08:15:00",
+  },
+  {
+    id: 12,
+    truckId: 6,
+    odometerKm: 196280,
+    source: "manual",
+    recordedAt: "2026-10-01T15:20:00",
+    notes:
+      "Reading recorded after truck breakdown.",
+    recordedBy: "Fleet Admin",
+    createdAt: "2026-10-01T15:20:00",
+  },
+];
